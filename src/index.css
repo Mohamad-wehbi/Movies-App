@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: 26 26 26;
+  --bg-secondary: 0 0 0;
+  --text-primary: 230 230 230;
+  --text-secondary: 148 163 184;
+  --main: 255 42 0;
+  --shadow: 0 0 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: rgb(var(--bg-secondary));
+  user-select: none;
+}
+
+@layer{
+  .container{
+    @apply min-w-full px-[4%] h-full;
+  }
+}
+
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(var(--main));
+}
